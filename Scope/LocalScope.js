@@ -18,3 +18,10 @@ function selectAnimal() {
 }
 
 selectAnimal();
+
+// This is sometimes referred to as function
+// scope. Variables that are declared within a
+// JavaScript function are local to that function,
+//  therefore they have local scope. This means
+// they can only be accessed from within that
+// function.
