@@ -9,25 +9,25 @@
  */
 
 
-function download (url, callback) {
-    console.log('Downloading from', url);
+function download(url, callback) {
+    console.log("Downloading from", url);
     setTimeout(() => {
-        console.log('Downloading is done');
-        let DownloadData = "Some data";
-        callback?.(downloadData);
+        console.log("Download is done");
+        let downloadedData = "Some data";
+        callback?.(downloadedData);
     }, 3000);
 }
 
-download('https://example.com', function handleDownload(data) {
+download("https://www.example.com", function handleDownload(data) {
     console.log("Data downloaded is", data);
 })
 
 function writeFile(data, fileName, callback) {
     // fileName tells the name of the file to be created in which data will be written
-    console.log("Writting", data, "to file");
+    console.log("Writing", data, " to file");
     setTimeout(() => {
-        console.log("Writting to file ", fileName, " is done");
-        let status = "Sucess";
+        console.log("Writing to file ", fileName, " is done");
+        let status="Success";
         callback?.(status);
     }, 2000);
 }
